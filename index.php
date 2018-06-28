@@ -23,7 +23,7 @@
 		
 		$kafanagore = mt_rand(1, 9999);
 		
-		$giris = "serverquery://".$USER_QUERY.":".$PASS_QUERY."@".$HOST_QUERY.":".$PORT_QUERY."/?server_port=".$SERVER_PORT."";
+		$giris = "serverquery://".$kullanici.":".$sifre."@".query.":".$port"/?server_port=".$sunucuportu."";
 		$ts3 = TeamSpeak3::factory($giris);
 		$ts3->execute("clientupdate", array("client_nickname" => $NICK_QUERY));
 		
