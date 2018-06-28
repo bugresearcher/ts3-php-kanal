@@ -25,7 +25,7 @@
 		
 		$giris = "serverquery://".$kullanici.":".$sifre."@".query.":".$port"/?server_port=".$sunucuportu."";
 		$ts3 = TeamSpeak3::factory($giris);
-		$ts3->execute("clientupdate", array("client_nickname" => $NICK_QUERY));
+		$ts3->execute("clientupdate", array("client_nickname" => $isim));
 		
 		$kullanicicek = $ts3->clientGetByUid($clib);
 		$idiyicektirbakalim= $kullanicicek[client_unique_identifier];
